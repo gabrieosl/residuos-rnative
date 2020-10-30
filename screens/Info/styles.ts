@@ -17,5 +17,14 @@ export const Title2 = styled.Text`
   margin-bottom: 12px;
 
 `;
+export const Title3 = styled.Text`
+  font-size: 16px;
+  color: #5d5d5d;
+  margin-bottom: 12px;
 
+`;
+
+export const LinkButton = styled.TouchableOpacity`
+  margin: 5px 0;
+`;
 export const LinkText = styled.Text``;

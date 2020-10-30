@@ -2,10 +2,16 @@ import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
+  background: #fff;
 `;
+
 
 export const Header = styled.View`
   padding: 15px;
+   
+  margin-top: 30px;
+  position: relative;
+  
 `;
 
 export const SearchBar = styled.View`
@@ -33,16 +39,36 @@ export const Title = styled.Text`
   margin-bottom: 24px;
   font-size: 28px;
   color: #2b2b2b;
+  min-height: 55px;
 `;
 
 export const ShortDescription = styled.Text`
   font-size: 14px;
-  color: #5d5d5d;
+  color: #2d2d2d;
 
 `;
 
+interface ImageProps {
+  image: string;
+}
+export const Image = styled.View<ImageProps>`
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%;
+  height: 100%; */
 
-export const Image = styled.View``;
+  background-image: url(${props=> props.image});
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 10%;
+  z-index: -1;
+  opacity: 0.5;
+
+`;
 
 export const Content = styled.ScrollView`
   flex: 1;
@@ -50,6 +76,7 @@ export const Content = styled.ScrollView`
   padding: 10px;
   background: #e2e2e2;
   border-radius: 12px;
+  margin-top: 0;
 `;
 
 export const Item = styled.View`
@@ -58,7 +85,12 @@ export const Item = styled.View`
 export const ItemName = styled.Text`
   font-size: 16px;
   color: #2b2b2b;
-  text-transform: capitalize
+  text-transform: capitalize;
+  padding: 5px;
+  margin: 3px;
+  background: #F2F2F2;
+  border-radius: 4px;
+
 `;
 
 export const ResidueClasses = styled.View`
@@ -101,4 +133,21 @@ export const ResidueClassText = styled.Text`
   text-transform: capitalize;
   color: #fff;
   transform: rotate(-45deg);
+`;
+
+export const MoreButton = styled.TouchableOpacity`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MoreBox = styled.Image`
+  height: 200px;
+  width: 100%;
+`;
+
+export const SeeMoreText = styled.Text`
+  font-size: 14px;
+  color: #444;
+  margin-right: 10px;
 `;
