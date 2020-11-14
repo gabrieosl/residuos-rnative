@@ -8,6 +8,7 @@ import boneco1 from "../../assets/images/boneco1.png";
 import boneco2 from "../../assets/images/boneco2.png";
 import boneco3 from "../../assets/images/boneco3.png";
 import boneco4 from "../../assets/images/boneco4.png";
+import GoBack from "../../components/BackButton";
 
 import {
   Container,
@@ -21,7 +22,6 @@ import {
   ButtonsRow,
   ImageBoneco,
 } from "./styles";
-import GoBack from "../../components/BackButton";
 
 const Home: React.FC = ({ navigation }) => {
   const handleClick = useCallback(async () => {
@@ -32,10 +32,10 @@ const Home: React.FC = ({ navigation }) => {
   return (
     <Container>
       <GoBack navigation={navigation} />
-      <Title>Pesquisa de satisfação sobre a Usabilidade do App</Title>
+      <Title>Quiz – Teste seus conhecimentos sobre os RSS</Title>
       <iframe
         style={{ width: "100%", flex: 1, border: 0 }}
-        src="https://pt.surveymonkey.com/r/H6T9WFF"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd15JZh3hNjSMFgrFmuYwgrg3TG3X3R9y1G4Ibmshpkh0bZ3A/viewform?usp=sf_link"
       />
     </Container>
   );

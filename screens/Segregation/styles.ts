@@ -1,12 +1,9 @@
 import styled, {css} from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
   background: #ffffff;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  padding-top: 32px;
+  
   
 `;
 export const Title = styled.Text`
@@ -18,8 +15,8 @@ export const Title = styled.Text`
   background-color: #B4D4A5;
   padding: 5px 10px;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
   text-align: center;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 `;
 
 export const SubTitle = styled.Text`
@@ -29,30 +26,16 @@ export const SubTitle = styled.Text`
   color: #2b2b2b;
   text-align: center;
 `;
-export const LinkButton = styled.TouchableOpacity`
-  margin: 5px 0;
-`;
-
-export const LinksContainer = styled.View`
-  flex: 1;
-  max-width: 100%;
-`;
-
-export const LinkText = styled.Text`
-  text-align: left;
-  flex: 1;
-  width: 100%;
-`;
 
 export const SubTitle2 = styled.Text`
   font-size: 14px;
-  margin-top: 18px;
+  margin-top: 8px;
   color: #2b2b2b;
   text-align: justify;
 `;
 
 export const Image = styled.Image`
-  height: 200px;
+  height: 350px;
   width: 100%;
 
 `;
@@ -62,7 +45,7 @@ export const ImageTitle = styled.Text`
 `;
 export const Font = styled.Text`
   font-size: 12px;
-  text-align: left;
+  text-align: right;
 `;
 
 

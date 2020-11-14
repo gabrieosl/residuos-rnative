@@ -7,7 +7,6 @@ export const Container = styled.View`
   justify-content: center;
   padding: 20px;
   padding-top: 32px;
-  
 `;
 export const Title = styled.Text`
   margin-top: 12px;
@@ -28,6 +27,7 @@ export const SubTitle = styled.Text`
   font-size: 18px;
   color: #2b2b2b;
   text-align: center;
+  text-align: justify;
 `;
 export const LinkButton = styled.TouchableOpacity`
   margin: 5px 0;
@@ -42,6 +42,7 @@ export const LinkText = styled.Text`
   text-align: left;
   flex: 1;
   width: 100%;
+  text-align: justify;
 `;
 
 export const SubTitle2 = styled.Text`
@@ -52,8 +53,9 @@ export const SubTitle2 = styled.Text`
 `;
 
 export const Image = styled.Image`
-  height: 200px;
-  width: 100%;
+  width: 300px;
+  flex: 1;
+  /* height: 200px; */
 
 `;
 

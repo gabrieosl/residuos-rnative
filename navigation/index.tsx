@@ -8,9 +8,17 @@ import * as React from "react";
 import { ColorSchemeName } from "react-native";
 
 import Home from "../screens/Home";
+import Generators from "../screens/Generators";
+import Segregation from "../screens/Segregation";
+import Descarte from "../screens/Descarte";
+import Residue from "../screens/Residue";
+import Info from "../screens/Info";
+import Survey from "../screens/Survey";
+import Quiz from "../screens/Quiz";
+import MaisInfo from "../screens/MaisInfo";
+
 import NotFoundScreen from "../screens/NotFoundScreen";
 import { RootStackParamList } from "../types";
-import BottomTabNavigator from "./BottomTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -41,7 +49,16 @@ function RootNavigator() {
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Root" component={BottomTabNavigator} />
+
+      <Stack.Screen name="Generators" component={Generators} />
+      <Stack.Screen name="Groups" component={Residue} />
+      <Stack.Screen name="Segregation" component={Segregation} />
+      <Stack.Screen name="Descarte" component={Descarte} />
+      <Stack.Screen name="Leis" component={Info} />
+      <Stack.Screen name="Quiz" component={Quiz} />
+      <Stack.Screen name="Pesquisa" component={Survey} />
+      <Stack.Screen name="MaisInfo" component={MaisInfo} />
+
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}

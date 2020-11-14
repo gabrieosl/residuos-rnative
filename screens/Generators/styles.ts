@@ -4,11 +4,11 @@ export const Container = styled.View`
   flex: 1;
   background: #ffffff;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
   padding-top: 32px;
-  
 `;
+
 export const Title = styled.Text`
   margin-top: 12px;
   margin-bottom: 24px;
@@ -19,7 +19,6 @@ export const Title = styled.Text`
   padding: 5px 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-  text-align: center;
 `;
 
 export const SubTitle = styled.Text`
@@ -29,42 +28,13 @@ export const SubTitle = styled.Text`
   color: #2b2b2b;
   text-align: center;
 `;
-export const LinkButton = styled.TouchableOpacity`
-  margin: 5px 0;
-`;
 
-export const LinksContainer = styled.View`
-  flex: 1;
-  max-width: 100%;
-`;
-
-export const LinkText = styled.Text`
-  text-align: left;
-  flex: 1;
-  width: 100%;
-`;
-
-export const SubTitle2 = styled.Text`
-  font-size: 14px;
-  margin-top: 18px;
-  color: #2b2b2b;
-  text-align: justify;
-`;
 
 export const Image = styled.Image`
-  height: 200px;
+  height: 150px;
   width: 100%;
 
 `;
-
-export const ImageTitle = styled.Text`
-  font-family: "space-mono-bold";
-`;
-export const Font = styled.Text`
-  font-size: 12px;
-  text-align: left;
-`;
-
 
 interface ImageBonecoProps {
   flip? : boolean;
@@ -89,9 +59,10 @@ export const Button = styled.TouchableOpacity`
   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 `;
 
-export const ButtonText = styled.Text`
+export const ItemText = styled.Text`
   color: #000;
-  font-size:22px;
+  font-size:18px;
+  margin: 5px 0;
   text-transform: uppercase;
 `;
 
@@ -102,7 +73,7 @@ export const ImagesRow = styled.View`
 export const ButtonsRow = styled.View``;
 
 export const Content = styled.View`
-  flex-direction: row;
   justify-content: space-around;
   flex: 1;
+  justify-content: flex-start;
 `;

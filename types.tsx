@@ -1,19 +1,15 @@
 export type RootStackParamList = {
-  Root: undefined;
+  Generators: undefined;
+  Groups: undefined;
+  Segregation: undefined;
+  Descarte: undefined;
+  Leis: undefined;
+  Quiz: undefined;
+  Pesquisa: undefined;
+  MaisInfo: undefined;
   NotFound: undefined;
   Home: undefined;
-};
-
-export type BottomTabParamList = {
   TabOne: undefined;
   TabTwo: undefined;
   TabThree: undefined;
-};
-
-export type TabOneParamList = {
-  TabOneScreen: undefined;
-};
-
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
 };

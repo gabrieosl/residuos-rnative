@@ -6,27 +6,15 @@ export default {
     screens: {
       Home: {
         screens: {
-          Home: 'Home'
+          Generators: 'Generators',
+          Groups: 'Groups',
+          Segregation: 'Segregation',
+          Descarte: 'Descarte',
+          Leis: 'Leis',
+          Quiz: 'Quiz',
+          Pesquisa: 'Pesquisa',
+          MaisInfo: 'MaisInfo',
         }
-      },
-      Root: {
-        screens: {
-          TabOne: {
-            screens: {
-              TabOneScreen: 'one',
-            },
-          },
-          TabTwo: {
-            screens: {
-              TabTwoScreen: 'two',
-            },
-          },
-          TabThree: {
-            screens: {
-              TabTwoScreen: 'two',
-            },
-          },
-        },
       },
       NotFound: '*',
     },

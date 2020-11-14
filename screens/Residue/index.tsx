@@ -32,6 +32,7 @@ import Descarteb from "../../assets/images/descarteb.jpg";
 import Descartec from "../../assets/images/descartec.jpg";
 import Descarted from "../../assets/images/descarted.jpg";
 import Descartee from "../../assets/images/descartee.jpg";
+import GoBack from "../../components/BackButton";
 
 const RESIDUE_CLASS = {
   a: {
@@ -159,7 +160,7 @@ const RESIDUE_CLASS = {
   },
 };
 
-const Residue: React.FC = () => {
+const Residue: React.FC = ({ navigation }) => {
   const [selectedClass, setSelectedClass] = useState("a");
   const [searchValue, setSearchValue] = useState("");
   const [isSearching, setIsSearching] = useState(false);
@@ -177,6 +178,7 @@ const Residue: React.FC = () => {
 
   return (
     <Container>
+      <GoBack navigation={navigation} />
       <Header>
         {/* <SearchBar>
           {isSearching && <InputSearch />}
