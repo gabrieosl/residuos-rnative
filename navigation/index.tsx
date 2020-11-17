@@ -12,7 +12,7 @@ import Generators from "../screens/Generators";
 import Segregation from "../screens/Segregation";
 import Descarte from "../screens/Descarte";
 import Residue from "../screens/Residue";
-import Info from "../screens/Info";
+import Leis from "../screens/Leis";
 import Survey from "../screens/Survey";
 import Quiz from "../screens/Quiz";
 import MaisInfo from "../screens/MaisInfo";
@@ -54,7 +54,7 @@ function RootNavigator() {
       <Stack.Screen name="Groups" component={Residue} />
       <Stack.Screen name="Segregation" component={Segregation} />
       <Stack.Screen name="Descarte" component={Descarte} />
-      <Stack.Screen name="Leis" component={Info} />
+      <Stack.Screen name="Leis" component={Leis} />
       <Stack.Screen name="Quiz" component={Quiz} />
       <Stack.Screen name="Pesquisa" component={Survey} />
       <Stack.Screen name="MaisInfo" component={MaisInfo} />
