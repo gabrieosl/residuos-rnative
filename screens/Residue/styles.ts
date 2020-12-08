@@ -93,6 +93,17 @@ export const ItemName = styled.Text`
   border-radius: 4px;
 
 `;
+export const SubGroupItemName = styled.Text`
+  font-size: 16px;
+  color: #2b2b2b;
+  text-transform: capitalize;
+  padding: 5px;
+  margin: 3px;
+  /* background: #F2F2F2; */
+  border-radius: 4px;
+  font-family: "space-mono-bold";
+
+`;
 
 export const ResidueClasses = styled.View`
   flex-direction: row;

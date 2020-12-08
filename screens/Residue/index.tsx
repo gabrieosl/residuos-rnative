@@ -15,6 +15,7 @@ import {
   ShortDescription,
   Item,
   ItemName,
+  SubGroupItemName,
   Image,
   MoreButton,
   MoreBox,
@@ -43,31 +44,37 @@ const RESIDUE_CLASS = {
     image: Ga,
     color: "#A896BE",
     examples: [
+      "SUBGROUP:Subgrupo A1",
       "Culturas ",
-      "estoques de microorganismos",
-      "resíduos de fabricação de produtos biológicos",
-      "descarte de vacinas de microorganismos vivos ou atenuados",
-      "meios de cultura",
-      "instrumentois utilizados para transferência",
-      "inoculação ou mistura de culturas",
-      "resíduos de laboratórios de manipulação genética",
+      "Estoques de microorganismos",
+      "Resíduos de fabricação de produtos biológicos",
+      "Descarte de vacinas de microorganismos vivos ou atenuados",
+      "Meios de cultura",
+      "Instrumentois utilizados para transferência",
+      "Inoculação ou mistura de culturas",
+      "Resíduos de laboratórios de manipulação genética",
+      "SUBGROUP:Subgrupo A2",
       "Resíduos resultantes da atenção à saúde de indivíduos ou animais",
-      "microorganismos com relevância epidemiológica ",
-      "causadores de doença emergente",
+      "Microorganismos com relevância epidemiológica ",
+      "Vausadores de doença emergente",
       "Bolsas transfusionais contendo sangue ou hemocomponentes",
       "Sobras de amostras de laboratório contendo sangue ou líquidos corpóreos",
-      "carcaças de humanos ou animais",
-      "peças anatomicas",
-      "visceras",
-      "residuos provenientes de animais",
-      "cadavers de humanos ou animais",
-      "kits de linhas arteriais",
-      "filtros de ar e gases aspirados de area contaminada",
-      "sobras de amostras de laboratório",
-      "recipientes contendo fezes, urina, secreções",
-      "resíduos de tecido adiposo proveniente de lipoaspiração, lipoescultura",
-      "microorganismos comsuspeita de príons",
+      "Carcaças de humanos ou animais",
+      "SUBGROUP:Subgrupo A3",
+      "Peças anatomicas",
+      "Visceras",
+      "Residuos provenientes de animais",
+      "Cadavers de humanos ou animais",
+      "SUBGROUP:Subgrupo A4",
+      "Kits de linhas arteriais",
+      "Filtros de ar e gases aspirados de area contaminada",
+      "Sobras de amostras de laboratório",
+      "Recipientes contendo fezes, urina, secreções",
+      "Resíduos de tecido adiposo proveniente de lipoaspiração, lipoescultura",
+      "Microorganismos com suspeita de príons",
       "Bolsas transfusionais vazias ou com volume residual pós-transfusão",
+      "SUBGROUP:Subgrupo A5",
+      "Órgãos, tecidos e fluidos orgânicos de alta infectividade para príons, de casos suspeitos ou confirmados, bem como quaisquer materiais resultantes da atenção à saúde de indivíduos ou animais, suspeitos ou confirmados, e que tiveram contato com órgãos, tecidos e fluidos de alta infectividade para príons",
     ],
   },
   b: {
@@ -206,9 +213,15 @@ const Residue: React.FC = ({ navigation }) => {
       </Header>
       <Content>
         {currentClassData.examples.map((example) => (
-          <Item>
-            <ItemName>{example}</ItemName>
-          </Item>
+          example.startsWith('SUBGROUP:' ) ? (
+            <Item>
+              <SubGroupItemName>{example.substring(9)}</SubGroupItemName>
+            </Item>
+          ) : (
+            <Item>
+              <ItemName>{example}</ItemName>
+            </Item>
+          )
         ))}
       </Content>
       <ResidueClasses>

@@ -41,7 +41,7 @@ export const SubTitle = styled.Text`
   margin-bottom: 12px;
   font-size: 18px;
   color: #2b2b2b;
-  text-align: center;
+  text-align: justify;
 `;
 
 
