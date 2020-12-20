@@ -37,7 +37,7 @@ import GoBack from "../../components/BackButton";
 
 const RESIDUE_CLASS = {
   a: {
-    name: "Resíduos potencialmente infectantes",
+    name: "Resíduos potencialmente infectantes, este grupo possui cinco subgrupos: A1, A2, A3, A4 e A5",
     descarte: Descartea,
     shortDescription:
       "sondas, curativos, luvas de procedimentos, bolsa de colostomia",
@@ -193,7 +193,8 @@ const Residue: React.FC = ({ navigation }) => {
             <Ionicons size={30} name="ios-search" color="#5d5d5d" />
           </SearchButton>
         </SearchBar> */}
-        <Title>{currentClassData.name}</Title>
+        <ShortDescription>Clique em cada letra para conhecer os resíduos</ShortDescription>
+        <Title>{`${selectedClass.toUpperCase()} - ${currentClassData.name}`}</Title>
         <ShortDescription>{currentClassData.shortDescription}</ShortDescription>
         <Image image={currentClassData.image} />
         {isMoreOpen ? (

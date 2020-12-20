@@ -51,7 +51,7 @@ const Home: React.FC = ({ navigation }) => {
         da ABNT o usuário poderá pesquisar mais sobre essas NBR. Clique nos
         botões abaixo para conhecer mais sobre as Resoluções e a Lei. Clique no
         Manual de gerenciamento de RSS da ANVISA para maiores informações sobre
-        os RSS. Clique também no manual de Saúde para ficar atualizado sobre
+        os RSS. Clique também em Biblioteca Virtual em Saúde para ficar atualizado sobre
         assuntos ligados aos RSS.
       </SubTitle>
       <Content>
